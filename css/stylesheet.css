@@ -31,6 +31,11 @@ hr {
 hr:nth-child(1) {
     border: 3px solid black;
 }
+legend {
+    font-size: 1.50rem;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+}
 .intro {
     margin: 40px;
 }
@@ -45,7 +50,7 @@ select ,
 input[type="email"] ,
 input[type="tel"]  {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-top: 10px;  
 } 
@@ -55,11 +60,12 @@ input[type="tel"]  {
 }
 
 form input:focus ,
-textarea:focus {
+textarea:focus ,
+select:focus {
     border: 2px solid rgb(26, 26, 150);   
 }
 #zipcode {
-    width: 50%;
+    max-width: 50%;
 }
 input[type="checkbox"] ,
 input[type="radio"] {
@@ -86,7 +92,7 @@ select {
     border: none;
     height: auto;
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 form {
     width: 90%;
@@ -123,22 +129,28 @@ footer p {
 ==================================== */
 
 @media only screen and (min-width: 768px) {
-form{
-    width: 60%;
+
+form {
+    max-width: 700px;
 } 
-.container label {
-    float: left;
-    width: 25%;
+.contact-info .flex-2 {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
 }
-span {
-    display: block;
-    overflow: hidden;
+.contact-info label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
 }
-.container input {
-    margin-top: 0px;
+.contact-info input ,
+.contact-info select {
+    flex-grow: 1;
+    flex-basis: 75%;
 }
+
+
 #zipcode {
-    width: 25%;
+    max-width: 25%;
 }
 } 

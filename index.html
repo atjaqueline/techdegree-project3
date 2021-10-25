@@ -14,27 +14,29 @@
                 <p>Get the latest news on how your code is doing right in your inbox<p>
             </div>
     </header>
-       
+             
             <form>
-                <fieldset>
-                <hr>
-                <hr>
-                <h3>Contact Information</h3>
+             <hr>
+             <hr>
+             <br>
+                <fieldset class="contact-info">
+               
+                <legend>Contact Information</legend>
                         
             <div class="container">
-                <label for="name">Full Name</label>
-                 <span><input type="text" id="name" name="user_name" placeholder="Required"></span>
+                <div class="flex-2"><label for="name">Full Name</label>
+                 <input type="text" id="name" name="user_name" placeholder="Required"></div>
                  <br>
-                 <label for="mail">Email Address</label>
-                 <span><input type="email" id="mail" name="user_email" placeholder="Required"></span><br>
-                 <label for="phone">Phone Number</label>
-                 <span><input type="tel" id="phone" name="user_phone"></span><br>
-                 <label for="adress">Street Address</label>
-                 <span><input type="text" id="adress" name="user_adress"></span><br>
-                 <label for="city">City</label>
-                 <span><input type="text" id="city" name="user_city"></span><br>
-                 <label for="state">State</label>
-                 <span><select id="state" name="user_state">
+                 <div class="flex-2"><label for="mail">Email Address</label>
+                <input type="email" id="mail" name="user_email" placeholder="Required"></div><br>
+                 <div class="flex-2"><label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone"></div><br>
+                 <div class="flex-2"><label for="adress">Street Address</label>
+                 <input type="text" id="adress" name="user_adress"></div><br>
+                 <div class="flex-2"><label for="city">City</label>
+                 <input type="text" id="city" name="user_city"></div><br>
+                 <div class="flex-2"><label for="state">State</label>
+                <select id="state" name="user_state">
                      <option value="" disabled selected hidden>Choose State</option>
                      <option value="AL">Alabama</option>
                      <option value="AK">Alaska</option>
@@ -87,15 +89,16 @@
                      <option value="WV">West Virginia</option>
                      <option value="WI">Wisconsin</option>
                      <option value="WY">Wyoming</option>
-                 </select></span><br>
-                 <label for="zipcode">Zip code</label>
-                 <span><input type="text" id="zipcode" name="user_zipcode"></span>
+                 </select></div><br>
+                 <div class="flex-2"><label for="zipcode">Zip code</label>
+                 <input type="text" id="zipcode" name="user_zipcode"></div>
             </div>
                     <br>
                 </fieldset>
                     <hr>
+                    <br>
                 <fieldset>
-                    <h3>Newsletter</h3>
+                    <legend>Newsletter</legend>
                     <label>Select the newsletter you would like to receive</label><br><br>
                     <input type="checkbox" id="hnews" value="news_html" name="user_checkbox"><label for="hnews">HTML News</label><br>
                     <input type="checkbox" id="cssnews" value="news_css" name="user_checkbox"><label for="cssnews">CSS News</label><br>
@@ -106,8 +109,8 @@
             
                     <input type="radio" id="ptextradio" name="user_radio"><label for="ptextradio">Plain text</label><br><br>
 
-                    <label>Other topics you'd like to hear about</label><br>
-                    <textarea id="boxtext" name="user_textarea"></textarea>
+                    <label for="textarea">Other topics you'd like to hear about</label><br>
+                    <textarea id="textarea" name="user_textarea"></textarea>
                             
                 </fieldset>
 
